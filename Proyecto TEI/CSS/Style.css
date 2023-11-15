@@ -1,0 +1,13 @@
+/* Estilos para las filas y secciones */
+.fila {
+    width: 100%;
+    display: flex;
+  }
+  
+.seccion {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+
