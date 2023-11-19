@@ -9,7 +9,7 @@ google.charts.setOnLoadCallback(function() {
 
 function drawChart() {
     let data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses'],
+        ['Año', 'Ventas', 'Cantidad'],
         ['2014', 1000, 400],
         ['2015', 1170, 460],
         ['2016', 660, 1120],
@@ -17,7 +17,7 @@ function drawChart() {
     ]);
 
     let options = {
-        title: 'Company Performance',
+        title: 'Rendimiento de la empresa',
         curveType: 'function',
         legend: { position: 'bottom' }
     };
@@ -29,7 +29,7 @@ function drawChart() {
 function updateTable() {
     // Obtener datos del gráfico y convertirlos a tabla
     let data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses'],
+        ['Año', 'Ventas', 'Cantidad'],
         ['2014', 1000, 400],
         ['2015', 1170, 460],
         ['2016', 660, 1120],
@@ -59,14 +59,14 @@ function drawProductChart() {
 
 function drawInventorySoldChart() {
     let data = google.visualization.arrayToDataTable([
-        ['Product', 'Inventory', 'Sold'],
+        ['Producto', 'Inventario', 'Vendidos'],
         ['Product A', 100, 50],
         ['Product B', 80, 70],
         ['Product C', 120, 60]
     ]);
 
     let options = {
-        title: 'Inventory and Sales',
+        title: 'Inventario y Ventas',
         isStacked: true
     };
 

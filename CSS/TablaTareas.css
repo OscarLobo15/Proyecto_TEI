@@ -1,0 +1,23 @@
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    max-width: 200px; /* Ancho máximo de la celda para demostración */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Configuración para texto largo */
+.texto-largo {
+    max-height: 100px; /* Altura máxima de la celda */
+    overflow: auto;
+    word-wrap: break-word; /* Para que el texto se divida en líneas */
+}

@@ -11,7 +11,8 @@
 
     <!-- grafico -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="/Java/Grafico1.js"></script>
+    <script src="/Java/Inventario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
@@ -37,22 +38,21 @@
                 <div class="collapse show" id="home-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="/Home.html" class="link-dark d-inline-flex text-decoration-none rounded">Inicio</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Actualizaciones</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reportes</a></li>
                   </ul>
                 </div>
               </li>
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Ventas
+                  Estadísticas
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="/Ventas diarias.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Diarias</a></li>
-                    <li><a href="/Ventas semanales.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Semanales</a></li>
-                    <li><a href="/Ventas Anuales.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Anuales</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
+                    <li><a href="/Finanzas.html" class="link-dark d-inline-flex text-decoration-none rounded">Datos Financieros</a></li>
+                    <li><a href="/Clientes.html" class="link-dark d-inline-flex text-decoration-none rounded">Clientes</a></li>
+                    <li><a href="/Inventario.html" class="link-dark d-inline-flex text-decoration-none rounded">Inventario</a></li>
                   </ul>
                 </div>
               </li>
@@ -65,22 +65,23 @@
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="/Productos1.html" class="link-dark d-inline-flex text-decoration-none rounded">Análisis de ventas por producto</a></li>
                     <li><a href="/Productos2.html" class="link-dark d-inline-flex text-decoration-none rounded">Análisis de Margen de Beneficio por Producto</a></li>
-                    <li><a href="Productos3.html" class="link-dark d-inline-flex text-decoration-none rounded">Producto 3</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"> Producto 4</a></li>
+                    <li><a href="Productos3.html" class="link-dark d-inline-flex text-decoration-none rounded">Lista de Productos</a></li>
+                    <li><a href="/Ordenes.html" class="link-dark d-inline-flex text-decoration-none rounded"> Lista de Ordenes</a></li>
+                    <li><a href="" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
                   </ul>
                 </div>
               </li>
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  Orders  
+                  Otros  
                 </button>
                 <div class="collapse" id="orders-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">A</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">B</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">C</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">D</a></li>
                   </ul>
                 </div>
               </li>
@@ -89,13 +90,12 @@
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                  Account 
+                  Cuenta 
                 </button>
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Perfil</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Ajustes</a></li>
                     <li><a href="/index.html" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
                   </ul>
                 </div>
@@ -110,38 +110,15 @@
         <div class="col-9">
           <!-- Grafico 1 -->
           <Section class="p-5">
-            <h1> Ventas totales en el día</h1>
-            <div id="chart_div" style="width: 750px; height: 500px;"></div>
-            <div id="table_div" style="display: none;"></div> <!-- Elemento para mostrar la tabla (oculto inicialmente) -->
-            <button onclick="toggleTable()">Mostrar Tabla</button> <!-- Botón para mostrar/ocultar la tabla -->
+                <h1>Movimiento de Inventario</h1>
+                <div style="overflow-x: auto; width: 100%;">
+                    <canvas id="myChartInventario" width="800px" height="400px"></canvas>
+                </div>
           </Section>
           <Section class="p-5">
-                <div class="row">
-                    <!-- Gráfico 2 -->
-                    <div class="col-md-6">
-                        <Section class="p-2">
-                            <div id="product_chart_div" style="width: 300px; height: 250px;"></div>
-                        </Section>
-                    </div>
-                    <!-- Gráfico 3 -->
-                    <div class="col-md-6">
-                        <Section class="p-2">
-                            <div id="inventory_sold_chart_div" style="width: 300px; height: 250px;"></div>
-                        </Section>
-                    </div>
-                    <!-- Gráfico 4 -->
-                    <div class="col-md-6">
-                        <Section class="p-2">
-                            <div id="profit_chart_div" style="width: 300px; height: 250px;"></div>
-                        </Section>
-                    </div>
-                    <!-- Gráfico 5 -->
-                    <div class="col-md-6">
-                        <Section class="p-2">
-                            <div id="sales_comparison_chart_div" style="width: 300px; height: 250px;"></div>
-                        </Section>
-                    </div>
-                </div>
+            <h1>Mi Página</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores, dignissimos perferendis consequatur, dolorem quis fugiat totam omnis nemo explicabo voluptates. Tempora non, neque harum totam quisquam nobis. Minima, reprehenderit magnam!</p>
+                
             </Section>
             
           <Section class="p-5">
@@ -157,7 +134,7 @@
     </div>
 
     <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="/Java/Grafico1.js"></script>
+    <script src="/Java/Inventario.js"></script>
   
   </body>
 </html>

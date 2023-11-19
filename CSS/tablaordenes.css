@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word; /* Permite que el texto se ajuste dentro de la celda */
+}
+th {
+  background-color: #f2f2f2;
+}

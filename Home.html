@@ -9,9 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <!-- grafico -->
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/Java/Grafico1.js"></script>
+
 
 </head>
 <body>
@@ -25,7 +26,7 @@
             
             <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
               <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-              <span class="fs-5 fw-semibold">Nombre del SaaS</span>
+              <span class="fs-5 fw-semibold">DataSolution</span>
             </a>
             
             <ul class="list-unstyled ps-0">
@@ -37,22 +38,21 @@
                 <div class="collapse show" id="home-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="/Home.html" class="link-dark d-inline-flex text-decoration-none rounded">Inicio</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+                    <li><a href="/Ventas diarias.html" class="link-dark d-inline-flex text-decoration-none rounded">Actualizaciones</a></li>
+                    <li><a href="/Reportes.html" class="link-dark d-inline-flex text-decoration-none rounded">Reportes</a></li>
                   </ul>
                 </div>
               </li>
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                  Ventas
+                  Estadísticas
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="/Ventas diarias.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Diarias</a></li>
-                    <li><a href="/Ventas semanales.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Semanales</a></li>
-                    <li><a href="/Ventas Anuales.html" class="link-dark d-inline-flex text-decoration-none rounded">Ventas Anuales</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
+                    <li><a href="/Finanzas.html" class="link-dark d-inline-flex text-decoration-none rounded">Datos Financieros</a></li>
+                    <li><a href="/Clientes.html" class="link-dark d-inline-flex text-decoration-none rounded">Clientes</a></li>
+                    <li><a href="/Inventario.html" class="link-dark d-inline-flex text-decoration-none rounded">Inventario</a></li>
                   </ul>
                 </div>
               </li>
@@ -65,22 +65,23 @@
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="/Productos1.html" class="link-dark d-inline-flex text-decoration-none rounded">Análisis de ventas por producto</a></li>
                     <li><a href="/Productos2.html" class="link-dark d-inline-flex text-decoration-none rounded">Análisis de Margen de Beneficio por Producto</a></li>
-                    <li><a href="Productos3.html" class="link-dark d-inline-flex text-decoration-none rounded">Producto 3</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded"> Producto 4</a></li>
+                    <li><a href="Productos3.html" class="link-dark d-inline-flex text-decoration-none rounded">Lista de Productos</a></li>
+                    <li><a href="/Ordenes.html" class="link-dark d-inline-flex text-decoration-none rounded"> Lista de Ordenes</a></li>
+                    <li><a href="" class="link-dark d-inline-flex text-decoration-none rounded"></a></li>
                   </ul>
                 </div>
               </li>
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  Orders  
+                  Otros  
                 </button>
                 <div class="collapse" id="orders-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+                    <li><a href="/Otros1.html" class="link-dark d-inline-flex text-decoration-none rounded">Proyectos y Tareas</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">B</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">C</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">D</a></li>
                   </ul>
                 </div>
               </li>
@@ -89,13 +90,12 @@
               
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                  Account 
+                  Cuenta 
                 </button>
                 <div class="collapse" id="account-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
-                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Perfil</a></li>
+                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Ajustes</a></li>
                     <li><a href="/index.html" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
                   </ul>
                 </div>
@@ -108,22 +108,44 @@
         </div>
   
         <div class="col-9">
-          <!-- Grafico 1 -->
+          <h1> Bienvenido/a a DataSolution</h1>
           <Section class="p-5">
-            <h1>Mi Página</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores, dignissimos perferendis consequatur, dolorem quis fugiat totam omnis nemo explicabo voluptates. Tempora non, neque harum totam quisquam nobis. Minima, reprehenderit magnam!</p>
+            <p>¡Bienvenido a DataSolution! Donde los datos se transforman en conocimiento y las decisiones se vuelven más inteligentes. Potencia tu capacidad analítica con nuestra innovadora plataforma de análisis de datos, diseñada para impulsar el rendimiento de tu negocio. Descubre el poder de tomar decisiones informadas. ¿Estás listo para desbloquear el potencial de tus datos?</p>
+
           </Section>
           <Section class="p-5">
-            <h1>Mi Página</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores, dignissimos perferendis consequatur, dolorem quis fugiat totam omnis nemo explicabo voluptates. Tempora non, neque harum totam quisquam nobis. Minima, reprehenderit magnam!</p>
-                
+            <h3> Ventas totales en el día</h3>
+            <div id="chart_div" style="width: 750px; height: 500px;"></div>
+            <div id="table_div" style="display: none;"></div> <!-- Elemento para mostrar la tabla (oculto inicialmente) -->
+          </Section>
+          <Section class="p-5">
+                <div class="row">
+                    <!-- Gráfico 2 -->
+                    <div class="col-md-6">
+                        <Section class="p-2">
+                            <div id="product_chart_div" style="width: 300px; height: 250px;"></div>
+                        </Section>
+                    </div>
+                    <!-- Gráfico 3 -->
+                    <div class="col-md-6">
+                        <Section class="p-2">
+                            <div id="inventory_sold_chart_div" style="width: 300px; height: 250px;"></div>
+                        </Section>
+                    </div>
+                    <!-- Gráfico 4 -->
+                    <div class="col-md-6">
+                        <Section class="p-2">
+                            <div id="profit_chart_div" style="width: 300px; height: 250px;"></div>
+                        </Section>
+                    </div>
+                    <!-- Gráfico 5 -->
+                    <div class="col-md-6">
+                        <Section class="p-2">
+                            <div id="sales_comparison_chart_div" style="width: 300px; height: 250px;"></div>
+                        </Section>
+                    </div>
+                </div>
             </Section>
-            
-          <Section class="p-5">
-            <h1>Mi Página</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores, dignissimos perferendis consequatur, dolorem quis fugiat totam omnis nemo explicabo voluptates. Tempora non, neque harum totam quisquam nobis. Minima, reprehenderit magnam!</p>
-            
-          </Section>
 
           
         </div>
@@ -132,7 +154,7 @@
     </div>
 
     <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="/Java/Grafico1.js"></script>
+    <script src="/Java/GraficosInicio.js"></script>
   
   </body>
 </html>
